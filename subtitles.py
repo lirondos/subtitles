@@ -26,8 +26,8 @@ rootdir = 'C:\\Users\\myuser\\Documents\\subtitles'
 for root, _, files in os.walk(rootdir):
     for file in files:
         basename=os.path.basename(file)
-        ubicacion = os.path.realpath(os.path.join(root,basename))
-        shakes  = open(ubicacion, 'r')
+        localpath = os.path.realpath(os.path.join(root,basename))
+        shakes  = open(localpath, 'r')
         text= shakes.read()
         cleantext=clean(text)
         filename=os.path.splitext(os.path.basename(file))[0]

@@ -23,6 +23,8 @@ def clean(text):
 
 # rootdir should contain the path to the folder where subtitles files are located 
 rootdir = 'C:\\Users\\myuser\\Documents\\subtitles'
+# save_path should contain the path to the folder where txt files will be saved
+save_path = 'C:\\Users\\myuser\\Documents\\txt'
 for root, _, files in os.walk(rootdir):
     for file in files:
         basename=os.path.basename(file)
@@ -31,8 +33,6 @@ for root, _, files in os.walk(rootdir):
         text= shakes.read()
         cleantext=clean(text)
         filename=os.path.splitext(os.path.basename(file))[0]
-        # save_path should contain the path to the folder where txt files will be saved
-        save_path = 'C:\\Users\\myuser\\Documents\\txt'
         completeName = os.path.join(save_path, filename+'.txt')  
         newfile = open(completeName,'w')
         newfile.write(cleantext)

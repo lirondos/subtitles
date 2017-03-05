@@ -11,3 +11,24 @@ The subtitles repository contains a folder with Spanish subtitle clean files in 
 
 5. descriptive noise subtitles [breathing intensifies] 
 
+
+## Usage
+
+```shell
+usage: subtitles.py [-h] -i INPUT_ROOT -o OUTPUT_PATH [--keep-hierarchy] [-d]
+                    [-v]
+
+Process subtitles files removing metadata.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT_ROOT, --input-root INPUT_ROOT
+                        Path to folder (or file) to process where ".srt" files
+                        are located
+  -o OUTPUT_PATH, --output-path OUTPUT_PATH
+                        Path to folder where files will be saved
+  --keep-hierarchy      Whether input folder hierarchy will be preserved or
+                        flattened (default).
+  -d, --debug           Print lots of debugging statements
+  -v, --verbose         Be verbose
+```

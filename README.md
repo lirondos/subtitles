@@ -11,4 +11,3 @@ The subtitles repository contains a folder with Spanish subtitle clean files in 
 
 5. descriptive noise subtitles [breathing intensifies] 
 
-

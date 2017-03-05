@@ -32,3 +32,10 @@ optional arguments:
   -d, --debug           Print lots of debugging statements
   -v, --verbose         Be verbose
 ```
+
+**Example**: convert all `.srt` files inside `data/Friends` folder to `txt/Friends` using the
+same folder hierarchy for the outputs files:
+
+```shell
+python subtitles.py -d --keep-hierarchy -i data/Friends/ -o txt/Friends
+```

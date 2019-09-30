@@ -1,5 +1,13 @@
 # subtitles
-The subtitles repository contains a folder with Spanish subtitle clean files in txt from LOTR, Star Wars, Narcos, OITNB, GoT and HIMYM (this .txt files can be used as corpus material and are ready to be uploaded to AntConc) and a Python script that converts a subtitle file (.srt, etc) into a txt file, keeping the actual subtitle and removing:
+This repository contains a corpus of Spanish subtitles of popular films and series. The `txt` folder contains the subtitles txt files from:
+- Lord of the Rings
+- Star Wars
+- Narcos
+- Orange Is The New Black
+- Game of Thrones 
+- How I Met Your Mother. 
+
+The Python script `subtitles.py` can be used to convert any subtitle file (.srt, etc) into a txt file, keeping the actual subtitle text and removing:
 
 1. time stamp 00:00:06,217 --> 00:00:07,633
 
@@ -10,5 +18,7 @@ The subtitles repository contains a folder with Spanish subtitle clean files in 
 4. scene number 3421
 
 5. descriptive noise subtitles [breathing intensifies] 
+
+This corpus was created for a workshop for high school students from Spain. The workshop consisted in analyzing these subtitles using AntConc toolkit as a way of introducing them to Corpus Linguistics. [The making-of of the corpus compilation and the activities done during the workshop can be found here (in Spanish)](http://grammarpunki.com/star-wars-en-clase-de-lengua-los-subtitulos-como-corpus-linguistico/)
 
 

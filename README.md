@@ -1,4 +1,4 @@
-# subtitles
+# Subtitles corpus
 This repository contains a corpus of Spanish subtitles of popular films and series. The `txt` folder contains the subtitles txt files from:
 - Lord of the Rings
 - Star Wars

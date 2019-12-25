@@ -22,3 +22,30 @@ The Python script `subtitles.py` can be used to convert any subtitle file (.srt,
 This corpus was created for a workshop for high school students from Spain. The workshop consisted of analyzing these subtitles using [AntConc toolkit](https://www.laurenceanthony.net/software/antconc/) as a way of introducing them to Corpus Linguistics. [The making-of of the corpus compilation and the activities done during the workshop can be found here (in Spanish)](http://grammarpunki.com/star-wars-en-clase-de-lengua-los-subtitulos-como-corpus-linguistico/)
 
 
+## Usage
+
+```shell
+usage: subtitles.py [-h] -i INPUT_ROOT -o OUTPUT_PATH [--keep-hierarchy] [-d]
+                    [-v]
+
+Process subtitles files removing metadata.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT_ROOT, --input-root INPUT_ROOT
+                        Path to folder (or file) to process where ".srt" files
+                        are located
+  -o OUTPUT_PATH, --output-path OUTPUT_PATH
+                        Path to folder where files will be saved
+  --keep-hierarchy      Whether input folder hierarchy will be preserved or
+                        flattened (default).
+  -d, --debug           Print lots of debugging statements
+  -v, --verbose         Be verbose
+```
+
+**Example**: convert all `.srt` files inside `data/Friends` folder to `txt/Friends` using the
+same folder hierarchy for the outputs files:
+
+```shell
+python subtitles.py -d --keep-hierarchy -i data/Friends/ -o txt/Friends
+```
